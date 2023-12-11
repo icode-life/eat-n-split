@@ -37,6 +37,7 @@ function App() {
   const [selectedFriends, setSelectedFriends] = useState(null);
   const handleSelection = (friend) => { 
     setSelectedFriends((current) => current?.id === friend.id ? null : friend);
+    setShowAddFriend(false);
   };
 
   return (
